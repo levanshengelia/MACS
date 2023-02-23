@@ -1,0 +1,6 @@
+data/
+02-six-degrees-data/
+*.o
+*.out
+imdb-test
+six-degrees
