@@ -1,0 +1,8 @@
+*.o
+*.out
+rsg
+Makefile.dependencies
+vgcore.*
+*.gz
+*.rar
+*.zip
