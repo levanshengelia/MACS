@@ -10,7 +10,7 @@ This is scheme interpreter which supports some basic funcitons in scheme languag
 
 * Evaluation functions: apply, eval
 
-* Helper funcitnos: null?, length
+* Helper functions: null?, length
 
 * define and lambda functions
 
