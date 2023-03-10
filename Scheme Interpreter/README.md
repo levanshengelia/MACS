@@ -2,7 +2,7 @@ This is scheme interpreter which supports some basic funcitons in scheme languag
 
 Arithmetic oparations: -, +, /, *
 
-Logical oparations: =, >, <, >=, <=, and, or
+Logical oparations: =, >, <, >=, <=, and, or, not
 
 if/else
 
