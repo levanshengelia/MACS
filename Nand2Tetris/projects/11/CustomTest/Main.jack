@@ -1,0 +1,11 @@
+class Main {
+
+	function void Main() {
+		do func();
+		return this;
+	}
+	
+	function int func() {
+		return 5;
+	}
+}

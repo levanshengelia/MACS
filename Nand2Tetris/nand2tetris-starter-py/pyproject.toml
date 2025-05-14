@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "nand2tetris-starter-py"
+version = "0.1.0"
+description = "Starter project for Nand 2 Tetris course."
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+coverage = "*"
+faker = "*"
+hypothesis = "*"
+
+[tool.poetry.group.lint.dependencies]
+mypy = "*"
+ruff = "*"
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+strict = true
+
+[tool.ruff]
+target-version = "py311"
+
+lint.select = ["E", "F", "I"]
+lint.ignore = []
+lint.fixable = ["A", "B", "C", "D", "E", "F", "I"]
+lint.unfixable = []
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.coverage.run]
+branch = true
+source = [
+    "tests",
+    "n2t/core",
+    "n2t/infra",
+    "n2t/runner",
+]
+
+[tool.coverage.report]
+skip_empty = true
+skip_covered = true
+show_missing = true
+
+[tool.pytest]
+testpaths = [
+    "tests",
+]
